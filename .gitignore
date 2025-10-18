@@ -23,4 +23,3 @@ top_all_time_vs_liked.py
 *.csv
 !not_liked_alltime_kworb.csv
 !decisions.csv
-images/
