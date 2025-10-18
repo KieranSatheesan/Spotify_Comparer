@@ -1,4 +1,4 @@
-# 🎧 Spotify Comparer — Top Streamed vs Liked Songs  
+# Spotify Comparer — Top Streamed vs Liked Songs  
 
 Wanted to see which of Spotify’s **most streamed songs of all time** weren’t already in my own **Liked Songs**… so I built a small tool to find out.  
 
@@ -116,7 +116,7 @@ Opens a simple browser interface to review, play previews, and add songs with a 
 
 ---
 
-## ✨ Notes  
+## Notes  
 - Built purely as a personal curiosity project.  
 - Reusable by anyone with a Spotify account and developer credentials.  
 - All API calls are read-only (except when adding to your own playlist).  
