@@ -3,33 +3,29 @@
 Wanted to see which of Spotify’s **most streamed songs of all time** weren’t already in my own **Liked Songs**… so I built a small tool to find out.  
 
 A Python + Streamlit project that compares your Spotify **Liked Songs** to the **most streamed songs ever** (via [Kworb.net](https://kworb.net/spotify/)).  
-Discover which global hits you *don’t* have liked — and add them directly to your own playlist.
+Discover which global hits you *don’t* have liked and add them directly to your own playlist.
 
 ---
 
-## 💡 Motivation  
+## Motivation  
 
-I wanted to see which songs from Spotify’s *most streamed ever* list I somehow didn’t have in my Liked Songs.  
-To my surprise, I was missing **Cruel Summer — Taylor Swift** (banger).  
-A little less surprising was **Clean Baby Sleep White Noise (Loopable)** — although technically still a “top streamed song.”  
-
-So I made a small personal project to find the overlap (or lack thereof) — and turned it into something others could easily reuse too.
+I wanted to see which songs from Spotify’s *most streamed ever* list I somehow didn’t have in my Liked Songs. I was shocked to find tracks like **Cruel Summer — Taylor Swift** (banger) and **Goosebumps - Travis Scott**, and a little less shocked to find I was missing out on **Clean Baby Sleep White Noise (Loopable)**.
 
 ---
 
-## 🚀 Features  
+## Features  
 - Fetches the current **all-time most streamed songs** on Spotify.  
 - Compares them with your **personal Liked Songs** using the Spotify API.  
 - Generates neat CSV summaries (`liked_alltime_kworb.csv`, `not_liked_alltime_kworb.csv`).  
 - Offers both:
-  - 🧠 **CLI interface** to step through tracks and add them to a playlist.  
-  - 🌐 **Streamlit web app** to browse, preview, and add songs interactively.  
+  - **CLI interface** to step through tracks and add them to a playlist.  
+  - **Streamlit web app** to browse, preview, and add songs interactively.  
 - Automatically creates or updates a playlist:  
   > `Spotify_Comparer: Top Streamed Songs`
 
 ---
 
-## 🧰 Scripts  
+## Scripts  
 
 | Script | Purpose |
 |--------|----------|
@@ -40,12 +36,12 @@ So I made a small personal project to find the overlap (or lack thereof) — and
 
 ---
 
-## ⚙️ Setup  
+## Setup  
 
 Clone the repo and create your virtual environment:
 
 ```bash
-git clone https://github.com/<yourusername>/spotify-comparer.git
+git clone https://github.com/KieranSatheesan/spotify-comparer.git
 cd spotify-comparer
 python -m venv .venv
 .\.venv\Scripts\activate  # (on macOS/Linux: source .venv/bin/activate)
@@ -65,9 +61,9 @@ Make sure your redirect URI matches exactly (`http://127.0.0.1:8888/callback`).
 
 ---
 
-## ▶️ How to Run  
+## How to Run  
 
-### Option 1: Compare + CSV output
+### Compare + CSV output
 ```bash
 python compare_kworb_to_liked.py
 ```
@@ -75,9 +71,11 @@ This will create two CSVs:
 - `liked_alltime_kworb.csv`
 - `not_liked_alltime_kworb.csv`
 
+From here you have 2 options:
+
 ---
 
-### Option 2: CLI playlist builder
+### Option 1: CLI playlist builder
 ```bash
 python cli_playlist_builder.py
 ```
@@ -85,18 +83,25 @@ Interactively review each unliked song — press:
 - `k` to keep (add to playlist)  
 - `s` to skip  
 - `o` to open in browser  
+- `q` to quit (i.e. stop playlist building session)
 
 ---
 
-### Option 3: Streamlit web app
+### Option 2: Streamlit web app
 ```bash
 streamlit run spotify_comparer_app.py
 ```
 Opens a simple browser interface to review, play previews, and add songs with a click.
 
+<p align="center">
+  <img src="images/image.png" alt="Spotify Comparer App Preview" width="600">
+  <br>
+  <em>Figure 1 — Spotify Comparer App Preview.</em>
+</p>
+
 ---
 
-## 📁 Folder Overview  
+## Folder Overview  
 
 | Path | Description |
 |------|--------------|
