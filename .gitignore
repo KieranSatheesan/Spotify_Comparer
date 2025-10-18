@@ -1,10 +1,25 @@
-# Python
+# Environment
+.venv/
 __pycache__/
 *.pyc
-.venv/
 
-# Environment files
+# Secrets / tokens
 .env
+.spotipyoauthcache
 
-# VS Code
-.vscode/
+# Runtime logs
+kept.csv
+
+# System files
+.DS_Store
+
+#Unwanted files
+kworb_vs_liked_old.py
+liked_alltime_kworb.csv
+main.py
+not_liked_all_time.csv
+not_liked_top.csv
+top_all_time_vs_liked.py
+*.csv
+!not_liked_alltime_kworb.csv
+!decisions.csv
