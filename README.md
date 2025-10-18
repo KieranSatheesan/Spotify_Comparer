@@ -41,8 +41,8 @@ I wanted to see which songs from Spotify’s *most streamed ever* list I somehow
 Clone the repo and create your virtual environment:
 
 ```bash
-git clone https://github.com/KieranSatheesan/spotify-comparer.git
-cd spotify-comparer
+git clone https://github.com/KieranSatheesan/Spotify_Comparer.git
+cd Spotify_Comparer
 python -m venv .venv
 .\.venv\Scripts\activate  # (on macOS/Linux: source .venv/bin/activate)
 pip install -r requirements.txt
